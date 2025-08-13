@@ -1,0 +1,481 @@
+body{
+    margin: 0px;
+}
+
+#body-header{
+    height: 55vh;
+    opacity: 0.8;
+    background-image: url(./image/macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+.horizontal-list li a{
+    color: white;
+    text-decoration: none;
+}
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 4s;
+}
+.nav-menu li a:hover{
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+.text-center{
+    text-align: center;
+}
+
+/* NAME AND SOCIAL ICONS */
+#name-social-container{
+    margin-top: 10vh;
+}
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.social-icon li a i{
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+.social-icon li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.3);
+}
+
+/* ABOUT */
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 4px white;
+}
+#about p{
+    padding: 10px;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+#about p b{
+    color: blue;
+}
+
+
+/* SECTION CLASSES */
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-child(2n){
+    background-color: #9e9b9b29;
+}
+section:nth-child(2n+1){
+    background-color: white;
+}
+
+/* NEW SKILLS */
+.skill-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 50px;
+    padding: 20px;
+}
+.icon{
+    width: 100px;
+    flex: 0 0 130px;
+    border-radius: 20px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+.icon img{
+    width: 100%;
+}
+
+.icon:hover{
+    box-shadow: 10px 10px 10px grey;
+  transform: scale(1.2);
+    
+}
+
+
+/* SKILLS */
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+.mb75px{
+    margin-bottom: 75px;
+}
+.skills-display{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skill-progress{
+    width: 9rem;
+    height: 1.6rem;
+    background-color: lightgray;
+    border-radius: 0.8rem;
+    margin: 1rem;
+    box-shadow: 0px 0px 6px 4px grey;
+}
+.skill-progress > div{
+    border-radius: 20px 0px 0px 20px;
+}
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+    
+
+/* .text-highlight */
+
+.mb-blue{
+    background-color: #2857a4;
+}
+.eighty-percent{
+    width: 80%;
+    height: inherit;
+}
+
+.mb-green{
+    background-color: green;
+}
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
+}
+
+.mb-pink{
+    background-color: rgb(240, 97, 121);
+}
+.fifty-percent{
+    width: 50%;
+    height: inherit;
+}
+
+.mb-red{
+    background-color: rgb(242, 66, 66);
+}
+.seventy-percent{
+    width: 70%;
+    height: inherit;
+}
+
+.mb-yellow{
+    background-color: rgb(144, 144, 59);
+}
+.sixty-percent{
+    width: 60%;
+    height: inherit;
+}
+
+
+/* CONTACT SECTION */
+#contact{
+    background-color: rgb(27, 27, 164);
+}
+.contact-flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-form  input,
+.contact-form  textarea{
+    width: 80%;
+    border: 1px solid transparent;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: white;
+    margin-bottom: 1rem;
+}
+.contact-form button{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    margin-left: 20%; 
+}
+.contact-touch{
+    color: white;
+}
+.contact-touch h3{
+    font-weight: 800;
+    font-size: 25px;
+}
+.contact-touch > p{
+    margin-bottom: 0;
+}
+.contact-touch span{
+    display: grid;
+    grid-template-columns: 0.1fr 2fr;
+    margin: 1rem;
+}
+.contact-touch span i,
+.contact-touch span p{
+    margin: 0;
+}
+.contact-touch span p{
+    margin-left: 7px;
+}
+.contact-form{
+    margin-bottom: 3rem;
+}
+#contact .section-heading span{
+    color: white;
+}
+
+/* .................TIMELINE................ */
+.timeline{
+    position: relative;
+    width: 90%;
+}
+.timeline-box{
+    position: relative;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+}
+.timeline-box:nth-child(2n){
+    left:53%;
+}
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    top: 40%;
+    right: -11%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: grey;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: -10%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: grey;
+    z-index: 1;
+}
+/* .................RIGHT SIDE.................. */
+.timeline-box .logo-combine{
+    display: flex;
+    justify-content: space-between;
+}
+.timeline-box .logo-combine .logo img{
+    width: 3rem;
+}
+.timeline-box .logo-combine .designation h2,
+.timeline-box .logo-combine .designation h3,
+.timeline-box .logo-combine .designation p{
+    margin: 0;
+}
+.timeline-box .logo-combine .designation{
+    text-align: right;
+    padding-right: 0;
+}
+.timeline-box .description{
+    color: rgb(90, 89, 89);
+    text-align: justify;
+    margin: auto;
+    padding: 2px;
+}
+
+/* .................LEFT SIDE................... */
+
+.timeline-box .logo-combine1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+}
+.timeline-box .logo-combine1 .logo img{
+    width: 3rem;
+}
+.timeline-box .logo-combine1 .designation h2,
+.timeline-box .logo-combine1 .designation h3,
+.timeline-box .logo-combine1 .designation p{
+    margin: 0;
+}
+.timeline-box .logo-combine1 .designation{
+    text-align: left;
+    padding-left: 0;
+}
+
+/* ...............TIMELINE DIVIDER...................... */
+.timeline-divider{
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 3px dashed rgb(211, 210, 210);
+    top: 10%;
+    left: 49%;
+}
+.timeline-traveller{
+    position: sticky;
+    top: 20%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+/* PORTFOLIO */
+.container1 {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.container1 img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    color: white;
+    opacity: 0; /* Hidden initially */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.overlay h3{
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.overlay p{
+    text-align: center;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 1rem 1rem;
+}
+.port-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    gap: 15px;
+    width: 100%;
+    height: auto;
+    
+}
+
+/* Hover Effect */
+.container1:hover{
+    box-shadow: 0px 0px 6px 4px grey;
+}
+.container1:hover img {
+    filter: brightness(90%); /* Darken image */
+}
+
+.container1:hover .overlay {
+    opacity: 1; /* Show text */
+}
+
+
+
+/* ...................RESPONSIVENESS.................... */
+@media screen and (max-width: 600px)
+{
+    .timeline-divider{
+        left: 8%;
+    }
+    .timeline-box{
+        left: 12% !important;
+        width: 80%;
+    }
+    .timeline-box:nth-child(2n+1)::after{
+        left: -5%;
+    }
+    .timeline-box:nth-child(2n)::after{
+        left: -5%;
+    }
+    .timeline-box .logo-combine1{
+        flex-direction: row;
+    }
+    .timeline-box .logo-combine1 .designation{
+        text-align: right;
+        padding-left: 0;
+    }
+    .contact-flex{
+        /* display: block; */
+        grid-template-columns: 1fr;
+    }
+    /* .contact-form{
+
+    } */
+    .contact-touch h3,
+    .contact-touch > p{
+        text-align: center;
+        
+    }
+    .contact-touch span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
