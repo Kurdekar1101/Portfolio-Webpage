@@ -13,10 +13,18 @@ body{
 }
 
 .horizontal-list{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
     list-style: none;
     padding-left: 0px;
     margin: 0px;
 }
+nav{
+    flex:2 1 0;
+}
+
+
 .horizontal-list li{
     display: inline-block;
     margin: 0px 8px 8px 0px;
@@ -37,6 +45,96 @@ body{
 .text-center{
     text-align: center;
 }
+
+#theme{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* THEME BUTTON */
+.theme-toggle-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: end;
+  gap: 0;
+  font-weight: bold;
+  padding-right: 1.5rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color:#3b3a3a;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: rgb(91, 91, 241);
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+.dark-theme section:nth-child(2n){
+    background-color: rgb(20, 20, 20);
+    transition: background-color 0.3s ease;
+}
+.dark-theme section:nth-child(2n+1){
+    background-color: black;
+    transition: background-color 0.3s ease;
+}
+.dark-theme #about p{
+    color: white;
+    transition: color 0.3s ease;
+}
+.dark-theme .timeline-box .logo-combine .designation,
+.dark-theme .timeline-box .logo-combine1 .designation,
+.dark-theme .fa-plane{
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.dark-theme .timeline-box .description{
+    color: rgb(209, 207, 207);
+    transition: color 0.3s ease;
+}
+.dark-theme .timeline-box:nth-child(2n+1)::after,
+.dark-theme .timeline-box:nth-child(2n)::after{
+    background-color: white;
+    border: 2px solid black;
+}
+
+
 
 /* NAME AND SOCIAL ICONS */
 #name-social-container{
@@ -171,7 +269,7 @@ section:nth-child(2n+1){
     padding-top: 10px;
     margin-right: 0.5rem;
 }
-.mb75px{
+/* .mb75px{
     margin-bottom: 75px;
 }
 .skills-display{
@@ -195,12 +293,12 @@ section:nth-child(2n+1){
     color: white;
     font-size: 1rem;
     margin-left: 5px;
-}
+} */
     
 
 /* .text-highlight */
 
-.mb-blue{
+/* .mb-blue{
     background-color: #2857a4;
 }
 .eighty-percent{
@@ -238,7 +336,7 @@ section:nth-child(2n+1){
 .sixty-percent{
     width: 60%;
     height: inherit;
-}
+} */
 
 
 /* CONTACT SECTION */
@@ -467,6 +565,7 @@ section:nth-child(2n+1){
 
 
 
+
 /* ...................RESPONSIVENESS.................... */
 @media screen and (max-width: 600px)
 {
@@ -506,6 +605,23 @@ section:nth-child(2n+1){
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    #theme{
+        display: block;
+    }
+    nav{
+        display: block;
+    }
+    .theme-toggle-wrapper{
+        justify-content: center;
+        align-items: center;
+    }
+    .horizontal-list{
+        display: block;
+    }
+    
+    #name-social-container{
+        margin-top: 30px;
     }
 }
 
