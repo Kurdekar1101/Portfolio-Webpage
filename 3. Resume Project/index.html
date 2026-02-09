@@ -12,7 +12,24 @@
 <body>
     <header id="body-header">
         <div id="theme">
-        <nav>
+
+            <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- DROPDOWN MENU -->
+<ul class="mobile-nav" id="mobile-nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+
+        <nav class="desktop-nav">
             <ul class="horizontal-list text-center nav-menu" id="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -43,7 +60,7 @@
             <div>
                 <ul class="horizontal-list text-center social-icon">
                     <li>
-                        <a href="https://www.linkedin.com/feed/" target="_blank">
+                        <a href="https://www.linkedin.com/in/dktepratikkurdekar/" target="_blank">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
                     </li>
@@ -53,7 +70,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/" target="_blank">
+                        <a href="https://github.com/Kurdekar1101" target="_blank">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </li>
@@ -81,14 +98,13 @@
             </div>
             <p>
                 &nbsp;&nbsp;&nbsp;&nbsp; As a highly motivated and detail-oriented <b>Electronics and Telecommunication Engineer</b>, 
-                I possess a strong foundation in <b>software development and industrial automation</b>. 
+                I possess a strong foundation in <b>software development</b>. 
                 With a B.Tech degree in <b>Electronics and Telecommunication Engineering</b>, 
                 I have developed a solid understanding of technical concepts and principles. 
                 My 2-month stint as a <b>Digital Engineering Trainee at Sonata Software Limited</b> has provided 
-                me with hands-on experience in software development, while my 1.5 years of experience in 
-                industrial automation have honed my skills in PLC programming and DBMS. 
+                me with hands-on experience in software development. 
                 Throughout my career, I have developed proficiency in a range of technologies, 
-                including <b>HTML, CSS, Java, MS SQL Server, Data Structures and Algorithms (DSA), and GitLab</b>. 
+                including <b>HTML, CSS, Javascript, Java, Spring Boot, MySQL, Git, etc</b>. 
                 I am well-versed in <b>software development life cycles and agile methodologies</b>, 
                 and I possess excellent problem-solving skills, with the ability to work effectively in team environments.
             </p>
@@ -117,6 +133,9 @@
                     <img src="./image/bootstrap.png">
                 </div>
                 <div class="icon">
+                    <img src="./image/reactjs.png">
+                </div>
+                <div class="icon">
                     <img src="./image/java.webp">
                 </div>
                 <div class="icon">
@@ -139,6 +158,9 @@
                 </div>
                 <div class="icon">
                     <img src="./image/eclipse.png">
+                </div>
+                <div class="icon">
+                    <img src="./image/sts.png">
                 </div>
             </div>
             
@@ -302,65 +324,74 @@
                 <span>PORTFOLIO</span>
             </h1>
             <div class="port-container">
-                <div class="container1">
-                    <img src="./image/project.jpeg" alt="Project Image">
+                <a href="https://github.com/Kurdekar1101/Ecommerce-Website">
+                    <div class="container1">
+                    <img src="./image/ecom.png" alt="Project Image">
                     <div class="overlay">
-                        <h3>Capstone Project</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Placeat tempore commodi vitae! Commodi minus voluptatum 
-                            ut veritatis adipisci? Amet, iusto.</p>
+                        <h3>E Commerce Website</h3>
+                        <p>Developed an E-commerce web application using Spring Boot, Spring Data JPA, Thymeleaf, Bootstrap and MySQL following MVC architecture.</p>
                     </div>
                 </div>
+                </a>
+                
+                <a href="https://github.com/Kurdekar1101/Portfolio-Webpage">
+                    <div class="container1">
+                    <img src="./image/portfolio.jpg" alt="Project Image">
+                    <div class="overlay">
+                        <h3>Portfolio Website</h3>
+                        <p>Developed a responsive personal portfolio website using HTML,
+                         CSS, showcasing projects, skills, education, and contact 
+                         information with a modern UI.</p>
+                    </div>
+                </div>
+                </a>
+                
+                <a href="https://github.com/Kurdekar1101/Restaurant-Menu">
+                    <div class="container1">
+                    <img src="./image/resto.avif" alt="Project Image">
+                    <div class="overlay">
+                        <h3>Restaurent Menu Website</h3>
+                        <p>Built a responsive restaurant menu website using HTML, CSS,
+                             and JavaScript with interactive menu filtering and an optimized user interface.</p>
+                    </div>
+                </div>
+                </a>
+                
+                <a href="#">
+                    <div class="container1">
+                    <img src="./image/evote.png" alt="Project Image">
+                    <div class="overlay">
+                        <h3>E Voting System</h3>
+                        <p>Built a secure E-Voting System using Spring Boot, 
+                            JPA, Hibernate, MySQL, implementing REST APIs and one-user-one-vote validation.</p>
+                    </div>
+                </div>
+                </a>
+                
+                <a href="#">
+                    <div class="container1">
+                    <img src="./image/appoint.png" alt="Project Image">
+                    <div class="overlay">
+                        <h3>Online Appointment Booking System</h3>
+                        <p>Developed an Appointment Booking System using Spring Boot, Hibernate, MySQL, 
+                            implementing RESTful services, CRUD operations, and slot-availability validation.</p>
+                    </div>
+                </div>
+                </a>
+                
+                <a href="https://github.com/Kurdekar1101/Wikipedia-Fetcher-App">
+                    <div class="container1">
+                    <img src="./image/wiki.png" alt="Project Image">
+                    <div class="overlay">
+                        <h3>Wikipedia Fetcher App</h3>
+                        <p>A simple Spring Boot application that fetches Wikipedia summaries using the
+                             Wikipedia REST API and displays results on a frontend search page.</p>
+                    </div>
+                </div>
+                </a>
+                
 
-                <div class="container1">
-                    <img src="./image/project_2.jpeg" alt="Project Image">
-                    <div class="overlay">
-                        <h3>Dashboard Project</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Placeat tempore commodi vitae! Commodi minus voluptatum 
-                            ut veritatis adipisci? Amet, iusto.</p>
-                    </div>
-                </div>
-
-                <div class="container1">
-                    <img src="./image/project_3.png" alt="Project Image">
-                    <div class="overlay">
-                        <h3>Python Project</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Placeat tempore commodi vitae! Commodi minus voluptatum 
-                            ut veritatis adipisci? Amet, iusto.</p>
-                    </div>
-                </div>
-
-                <div class="container1">
-                    <img src="./image/tree.jpeg" alt="Project Image">
-                    <div class="overlay">
-                        <h3>Frontend Project</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Placeat tempore commodi vitae! Commodi minus voluptatum 
-                            ut veritatis adipisci? Amet, iusto.</p>
-                    </div>
-                </div>
-
-                <div class="container1">
-                    <img src="./image/codezen.png" alt="Project Image">
-                    <div class="overlay">
-                        <h3>Ping - Pong Game</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Placeat tempore commodi vitae! Commodi minus voluptatum 
-                            ut veritatis adipisci? Amet, iusto.</p>
-                    </div>
-                </div>
-
-                <div class="container1">
-                    <img src="./image/codezen_2.png" alt="Project Image">
-                    <div class="overlay">
-                        <h3>Virtual Assistant</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Placeat tempore commodi vitae! Commodi minus voluptatum 
-                            ut veritatis adipisci? Amet, iusto.</p>
-                    </div>
-                </div>
+                
             </div>
         </section>
 
@@ -390,8 +421,7 @@
             <div class="contact-touch">
                 <h3>Get in touch</h3>
                 <p>
-                    Currently open to internships or entry-level roles in 
-                    Frontend or Software development. Let’s connect!
+                    Currently open to Java Developer, Software Developer roles. Let’s connect!
                 </p>
                 <br>
                 <h3>My Address</h3>
@@ -401,7 +431,7 @@
                 </span>
                 <span>
                     <i class="fa-solid fa-mobile-screen"></i>
-                    <p>9209789721</p>
+                    <p>+91 9209789721</p>
                 </span>
                 <span>
                     <i class="fa-regular fa-envelope"></i>
@@ -411,7 +441,7 @@
         </div>
         <ul class="horizontal-list text-center social-icon">
             <li>
-                <a href="https://www.linkedin.com/feed/" target="_blank">
+                <a href="https://www.linkedin.com/in/dktepratikkurdekar/" target="_blank">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
             </li>
@@ -421,7 +451,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://github.com/" target="_blank">
+                <a href="https://github.com/Kurdekar1101" target="_blank">
                     <i class="fa-brands fa-github"></i>
                 </a>
             </li>
